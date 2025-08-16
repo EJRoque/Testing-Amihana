@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-08-16T22:18:53 CST" name="Default suite" finished-at="2025-08-16T22:19:06 CST" duration-ms="12410">
+    <groups>
+    </groups>
+    <test started-at="2025-08-16T22:18:53 CST" name="Default test" finished-at="2025-08-16T22:19:06 CST" duration-ms="12410">
+      <class name="tests.LoginTest">
+        <test-method is-config="true" signature="setupReport()[pri:0, instance:tests.LoginTest@6200f9cb]" started-at="2025-08-16T22:18:53 CST" name="setupReport" finished-at="2025-08-16T22:18:53 CST" duration-ms="186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupReport -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTest@6200f9cb]" started-at="2025-08-16T22:18:53 CST" name="setup" finished-at="2025-08-16T22:18:56 CST" duration-ms="2426" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testEmptyEmailField()[pri:0, instance:tests.LoginTest@6200f9cb]" started-at="2025-08-16T22:18:56 CST" name="testEmptyEmailField" finished-at="2025-08-16T22:18:56 CST" duration-ms="225" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEmptyEmailField -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@6200f9cb]" started-at="2025-08-16T22:18:56 CST" name="tearDown" finished-at="2025-08-16T22:18:56 CST" duration-ms="139" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testEmptyEmailField status=SUCCESS method=LoginTest.testEmptyEmailField()[pri:0, instance:tests.LoginTest@6200f9cb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTest@6200f9cb]" started-at="2025-08-16T22:18:56 CST" name="setup" finished-at="2025-08-16T22:18:58 CST" duration-ms="1543" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testEmptyPasswordField()[pri:0, instance:tests.LoginTest@6200f9cb]" started-at="2025-08-16T22:18:58 CST" name="testEmptyPasswordField" finished-at="2025-08-16T22:18:58 CST" duration-ms="173" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEmptyPasswordField -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@6200f9cb]" started-at="2025-08-16T22:18:58 CST" name="tearDown" finished-at="2025-08-16T22:18:58 CST" duration-ms="129" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testEmptyPasswordField status=SUCCESS method=LoginTest.testEmptyPasswordField()[pri:0, instance:tests.LoginTest@6200f9cb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTest@6200f9cb]" started-at="2025-08-16T22:18:58 CST" name="setup" finished-at="2025-08-16T22:19:00 CST" duration-ms="1581" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testSuccessfulLogin()[pri:0, instance:tests.LoginTest@6200f9cb]" started-at="2025-08-16T22:19:00 CST" name="testSuccessfulLogin" finished-at="2025-08-16T22:19:00 CST" duration-ms="265" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSuccessfulLogin -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@6200f9cb]" started-at="2025-08-16T22:19:00 CST" name="tearDown" finished-at="2025-08-16T22:19:00 CST" duration-ms="125" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testSuccessfulLogin status=SUCCESS method=LoginTest.testSuccessfulLogin()[pri:0, instance:tests.LoginTest@6200f9cb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTest@6200f9cb]" started-at="2025-08-16T22:19:00 CST" name="setup" finished-at="2025-08-16T22:19:02 CST" duration-ms="1542" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testWrongEmail()[pri:0, instance:tests.LoginTest@6200f9cb]" started-at="2025-08-16T22:19:02 CST" name="testWrongEmail" finished-at="2025-08-16T22:19:03 CST" duration-ms="1283" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWrongEmail -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@6200f9cb]" started-at="2025-08-16T22:19:03 CST" name="tearDown" finished-at="2025-08-16T22:19:03 CST" duration-ms="128" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testWrongEmail status=SUCCESS method=LoginTest.testWrongEmail()[pri:0, instance:tests.LoginTest@6200f9cb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTest@6200f9cb]" started-at="2025-08-16T22:19:03 CST" name="setup" finished-at="2025-08-16T22:19:04 CST" duration-ms="1405" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testWrongPassword()[pri:0, instance:tests.LoginTest@6200f9cb]" started-at="2025-08-16T22:19:04 CST" name="testWrongPassword" finished-at="2025-08-16T22:19:06 CST" duration-ms="1283" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWrongPassword -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@6200f9cb]" started-at="2025-08-16T22:19:06 CST" name="tearDown" finished-at="2025-08-16T22:19:06 CST" duration-ms="128" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testWrongPassword status=SUCCESS method=LoginTest.testWrongPassword()[pri:0, instance:tests.LoginTest@6200f9cb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDownReport()[pri:0, instance:tests.LoginTest@6200f9cb]" started-at="2025-08-16T22:19:06 CST" name="tearDownReport" finished-at="2025-08-16T22:19:06 CST" duration-ms="207" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownReport -->
+      </class> <!-- tests.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
