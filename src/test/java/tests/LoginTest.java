@@ -15,9 +15,13 @@ public class LoginTest extends BaseTest{
 		LoginPage loginPage = new LoginPage(driver);
 		
 		loginPage.enterEmail("ernest.sample@gmail.com");
+		test.info("email entered");
 		loginPage.enterPassword("12121212");
+		test.info("password entered");
 		loginPage.clickShowPassword();
+		test.info("show password button clicked");
 		loginPage.clickLoginBtn();
+		test.info("login button clicked");
 		
 		test.pass("Login Successfully");
 	}
@@ -28,9 +32,13 @@ public class LoginTest extends BaseTest{
 		LoginPage loginPage = new LoginPage(driver);
 		
 		loginPage.enterEmail("wrong.email@mail.com");
+		test.info("email entered");
 		loginPage.enterPassword("12121212");
+		test.info("password entered");
 		loginPage.clickShowPassword();
+		test.info("show password button clicked");
 		loginPage.clickLoginBtn();
+		test.info("login button clicked");
 		
 		if (loginPage.isLoginErrorMessageDisplayed()) {
 			test.pass("Login error message appeared as expected.");
@@ -46,9 +54,13 @@ public class LoginTest extends BaseTest{
 		LoginPage loginPage = new LoginPage(driver);
 
 		loginPage.enterEmail("ernest.sample@gmail.com");
+		test.info("email entered");
 		loginPage.enterPassword("WrongPassword");
+		test.info("password entered");
 		loginPage.clickShowPassword();
+		test.info("show password button clicked");
 		loginPage.clickLoginBtn();
+		test.info("login button clicked");
 		
 		if (loginPage.isLoginErrorMessageDisplayed()) {
 			test.pass("Login error message appeared as expected.");
@@ -64,8 +76,11 @@ public class LoginTest extends BaseTest{
 		LoginPage loginPage = new LoginPage(driver);
 
 		loginPage.enterPassword("Test@1234");
+		test.info("password entered");
 		loginPage.clickShowPassword();
+		test.info("show password button clicked");
 		loginPage.clickLoginBtn();
+		test.info("login button clicked");
 		
 		test.pass("Empty field validated Successfully");
 	}
@@ -76,7 +91,9 @@ public class LoginTest extends BaseTest{
 		LoginPage loginPage = new LoginPage(driver);
 
 		loginPage.enterEmail("john.doe23@mail.com");
+		test.info("email entered");
 		loginPage.clickLoginBtn();
+		test.info("login button clicked");
 		
 		test.pass("Empty field validated Successfully");
 	}

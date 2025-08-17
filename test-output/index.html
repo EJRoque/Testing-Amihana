@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Personal\AppData\Local\Temp\testng-eclipse-1483286238\testng-customsuite.xml</span>
+                    <span>C:\Users\Personal\AppData\Local\Temp\testng-eclipse-1507621643\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="tests.RegisterTest" class="method navigator-link" hash-for-method="testEmptyRequiredFields">testEmptyRequiredFields</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,27 +117,17 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="testEmptyEmailField">testEmptyEmailField</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="tests.RegisterTest" class="method navigator-link" hash-for-method="testInvalidEmailFormat">testInvalidEmailFormat</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="testEmptyPasswordField">testEmptyPasswordField</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="tests.RegisterTest" class="method navigator-link" hash-for-method="testMismatchedPasswords">testMismatchedPasswords</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="testSuccessfulLogin">testSuccessfulLogin</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="testWrongEmail">testWrongEmail</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="testWrongPassword">testWrongPassword</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="tests.RegisterTest" class="method navigator-link" hash-for-method="testSuccessfulRegistration">testSuccessfulRegistration</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -138,45 +142,79 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+          <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">tests.LoginTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">tests.RegisterTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testEmptyEmailField">
-                  </a> <!-- testEmptyEmailField -->
-                  <span class="method-name">testEmptyEmailField</span>
+                  <a name="testEmptyRequiredFields">
+                  </a> <!-- testEmptyRequiredFields -->
+                  <span class="method-name">testEmptyRequiredFields</span>
+                  <div class="stack-trace">java.lang.AssertionError: ❌ Email error not displayed. expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at tests.RegisterTest.testEmptyRequiredFields(RegisterTest.java:98)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.RegisterTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvalidEmailFormat">
+                  </a> <!-- testInvalidEmailFormat -->
+                  <span class="method-name">testInvalidEmailFormat</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testEmptyPasswordField">
-                  </a> <!-- testEmptyPasswordField -->
-                  <span class="method-name">testEmptyPasswordField</span>
+                  <a name="testMismatchedPasswords">
+                  </a> <!-- testMismatchedPasswords -->
+                  <span class="method-name">testMismatchedPasswords</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testSuccessfulLogin">
-                  </a> <!-- testSuccessfulLogin -->
-                  <span class="method-name">testSuccessfulLogin</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testWrongEmail">
-                  </a> <!-- testWrongEmail -->
-                  <span class="method-name">testWrongEmail</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testWrongPassword">
-                  </a> <!-- testWrongPassword -->
-                  <span class="method-name">testWrongPassword</span>
+                  <a name="testSuccessfulRegistration">
+                  </a> <!-- testSuccessfulRegistration -->
+                  <span class="method-name">testSuccessfulRegistration</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -184,7 +222,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Personal\AppData\Local\Temp\testng-eclipse-1483286238\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Personal\AppData\Local\Temp\testng-eclipse-1507621643\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -193,7 +231,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;tests.LoginTest&quot;/&gt;
+      &lt;class name=&quot;tests.RegisterTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -233,27 +271,23 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testWrongEmail')
-data.setCell(0, 2, 'tests.LoginTest')
-data.setCell(0, 3, 1283);
+data.setCell(0, 1, 'testMismatchedPasswords')
+data.setCell(0, 2, 'tests.RegisterTest')
+data.setCell(0, 3, 1621);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testWrongPassword')
-data.setCell(1, 2, 'tests.LoginTest')
-data.setCell(1, 3, 1283);
+data.setCell(1, 1, 'testInvalidEmailFormat')
+data.setCell(1, 2, 'tests.RegisterTest')
+data.setCell(1, 3, 924);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testSuccessfulLogin')
-data.setCell(2, 2, 'tests.LoginTest')
-data.setCell(2, 3, 265);
+data.setCell(2, 1, 'testSuccessfulRegistration')
+data.setCell(2, 2, 'tests.RegisterTest')
+data.setCell(2, 3, 812);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testEmptyEmailField')
-data.setCell(3, 2, 'tests.LoginTest')
-data.setCell(3, 3, 225);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testEmptyPasswordField')
-data.setCell(4, 2, 'tests.LoginTest')
-data.setCell(4, 3, 173);
+data.setCell(3, 1, 'testEmptyRequiredFields')
+data.setCell(3, 2, 'tests.RegisterTest')
+data.setCell(3, 3, 497);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
@@ -284,74 +318,64 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">tests.RegisterTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">setupReport</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">208 ms</span>
+                <span class="method-start">199 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testEmptyEmailField</span>
-                <span class="method-start">2635 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testEmptyRequiredFields</span>
+                <span class="method-start">2448 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=testEmptyEmailField status=SUCCESS method=LoginTest.testEmptyEmailField()[pri:0, in...)</span>
-                <span class="method-start">2863 ms</span>
+                <span class="method-name">tearDown([TestResult name=testEmptyRequiredFields status=FAILURE method=RegisterTest.testEmptyRequiredFields(...)</span>
+                <span class="method-start">2949 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">3003 ms</span>
+                <span class="method-start">3691 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testEmptyPasswordField</span>
-                <span class="method-start">4546 ms</span>
+                <span class="method-name">testInvalidEmailFormat</span>
+                <span class="method-start">5299 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=testEmptyPasswordField status=SUCCESS method=LoginTest.testEmptyPasswordField()[pri...)</span>
-                <span class="method-start">4720 ms</span>
+                <span class="method-name">tearDown([TestResult name=testInvalidEmailFormat status=SUCCESS method=RegisterTest.testInvalidEmailFormat()[...)</span>
+                <span class="method-start">6225 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">4850 ms</span>
+                <span class="method-start">6358 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testSuccessfulLogin</span>
-                <span class="method-start">6431 ms</span>
+                <span class="method-name">testMismatchedPasswords</span>
+                <span class="method-start">8045 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=testSuccessfulLogin status=SUCCESS method=LoginTest.testSuccessfulLogin()[pri:0, in...)</span>
-                <span class="method-start">6697 ms</span>
+                <span class="method-name">tearDown([TestResult name=testMismatchedPasswords status=SUCCESS method=RegisterTest.testMismatchedPasswords(...)</span>
+                <span class="method-start">9667 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">6823 ms</span>
+                <span class="method-start">9791 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testWrongEmail</span>
-                <span class="method-start">8365 ms</span>
+                <span class="method-name">testSuccessfulRegistration</span>
+                <span class="method-start">11325 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=testWrongEmail status=SUCCESS method=LoginTest.testWrongEmail()[pri:0, instance:tes...)</span>
-                <span class="method-start">9649 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">9778 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">testWrongPassword</span>
-                <span class="method-start">11183 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=testWrongPassword status=SUCCESS method=LoginTest.testWrongPassword()[pri:0, instan...)</span>
-                <span class="method-start">12467 ms</span>
+                <span class="method-name">tearDown([TestResult name=testSuccessfulRegistration status=SUCCESS method=RegisterTest.testSuccessfulRegistr...)</span>
+                <span class="method-start">12139 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDownReport</span>
-                <span class="method-start">12610 ms</span>
+                <span class="method-start">12282 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

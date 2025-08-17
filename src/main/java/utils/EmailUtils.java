@@ -2,6 +2,7 @@ package utils;
 
 import java.io.File;
 import java.util.Properties;
+import java.util.UUID;
 
 import jakarta.mail.Authenticator;
 import jakarta.mail.Message;
@@ -14,6 +15,12 @@ import jakarta.mail.internet.MimeMessage;
 import jakarta.mail.internet.MimeMultipart;
 
 public class EmailUtils {
+	
+	// Generates a unique email with timestamp
+    public static String generateUniqueEmail() {
+        return "testuser_" + UUID.randomUUID().toString().substring(0, 8) + "@example.com";
+    }
+	
 	public static void sendTestReport(String reportPath) {
 		final String senderEmail = "automationtesting.selenium247@gmail.com";
 		final String appPassword = "ciedojrovgikdfha";

@@ -1,116 +1,136 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-16T22:18:53 CST" name="Default suite" finished-at="2025-08-16T22:19:06 CST" duration-ms="12410">
+  <suite started-at="2025-08-18T00:15:12 CST" name="Default suite" finished-at="2025-08-18T00:15:25 CST" duration-ms="12082">
     <groups>
     </groups>
-    <test started-at="2025-08-16T22:18:53 CST" name="Default test" finished-at="2025-08-16T22:19:06 CST" duration-ms="12410">
-      <class name="tests.LoginTest">
-        <test-method is-config="true" signature="setupReport()[pri:0, instance:tests.LoginTest@6200f9cb]" started-at="2025-08-16T22:18:53 CST" name="setupReport" finished-at="2025-08-16T22:18:53 CST" duration-ms="186" status="PASS">
+    <test started-at="2025-08-18T00:15:12 CST" name="Default test" finished-at="2025-08-18T00:15:25 CST" duration-ms="12082">
+      <class name="tests.RegisterTest">
+        <test-method is-config="true" signature="setupReport()[pri:0, instance:tests.RegisterTest@20d525]" started-at="2025-08-18T00:15:12 CST" name="setupReport" finished-at="2025-08-18T00:15:12 CST" duration-ms="176" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupReport -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTest@6200f9cb]" started-at="2025-08-16T22:18:53 CST" name="setup" finished-at="2025-08-16T22:18:56 CST" duration-ms="2426" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.RegisterTest@20d525]" started-at="2025-08-18T00:15:12 CST" name="setup" finished-at="2025-08-18T00:15:15 CST" duration-ms="2248" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testEmptyEmailField()[pri:0, instance:tests.LoginTest@6200f9cb]" started-at="2025-08-16T22:18:56 CST" name="testEmptyEmailField" finished-at="2025-08-16T22:18:56 CST" duration-ms="225" status="PASS">
+        <test-method signature="testEmptyRequiredFields()[pri:0, instance:tests.RegisterTest@20d525]" started-at="2025-08-18T00:15:15 CST" name="testEmptyRequiredFields" finished-at="2025-08-18T00:15:15 CST" duration-ms="497" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[❌ Email error not displayed. expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: ❌ Email error not displayed. expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at tests.RegisterTest.testEmptyRequiredFields(RegisterTest.java:98)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testEmptyEmailField -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@6200f9cb]" started-at="2025-08-16T22:18:56 CST" name="tearDown" finished-at="2025-08-16T22:18:56 CST" duration-ms="139" status="PASS">
+        </test-method> <!-- testEmptyRequiredFields -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.RegisterTest@20d525]" started-at="2025-08-18T00:15:15 CST" name="tearDown" finished-at="2025-08-18T00:15:16 CST" duration-ms="741" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testEmptyEmailField status=SUCCESS method=LoginTest.testEmptyEmailField()[pri:0, instance:tests.LoginTest@6200f9cb] output={null}]]]>
+                <![CDATA[[TestResult name=testEmptyRequiredFields status=FAILURE method=RegisterTest.testEmptyRequiredFields()[pri:0, instance:tests.RegisterTest@20d525] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTest@6200f9cb]" started-at="2025-08-16T22:18:56 CST" name="setup" finished-at="2025-08-16T22:18:58 CST" duration-ms="1543" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.RegisterTest@20d525]" started-at="2025-08-18T00:15:16 CST" name="setup" finished-at="2025-08-18T00:15:18 CST" duration-ms="1608" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testEmptyPasswordField()[pri:0, instance:tests.LoginTest@6200f9cb]" started-at="2025-08-16T22:18:58 CST" name="testEmptyPasswordField" finished-at="2025-08-16T22:18:58 CST" duration-ms="173" status="PASS">
+        <test-method signature="testInvalidEmailFormat()[pri:0, instance:tests.RegisterTest@20d525]" started-at="2025-08-18T00:15:18 CST" name="testInvalidEmailFormat" finished-at="2025-08-18T00:15:18 CST" duration-ms="924" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testEmptyPasswordField -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@6200f9cb]" started-at="2025-08-16T22:18:58 CST" name="tearDown" finished-at="2025-08-16T22:18:58 CST" duration-ms="129" status="PASS">
+        </test-method> <!-- testInvalidEmailFormat -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.RegisterTest@20d525]" started-at="2025-08-18T00:15:18 CST" name="tearDown" finished-at="2025-08-18T00:15:19 CST" duration-ms="133" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testEmptyPasswordField status=SUCCESS method=LoginTest.testEmptyPasswordField()[pri:0, instance:tests.LoginTest@6200f9cb] output={null}]]]>
+                <![CDATA[[TestResult name=testInvalidEmailFormat status=SUCCESS method=RegisterTest.testInvalidEmailFormat()[pri:0, instance:tests.RegisterTest@20d525] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTest@6200f9cb]" started-at="2025-08-16T22:18:58 CST" name="setup" finished-at="2025-08-16T22:19:00 CST" duration-ms="1581" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.RegisterTest@20d525]" started-at="2025-08-18T00:15:19 CST" name="setup" finished-at="2025-08-18T00:15:20 CST" duration-ms="1687" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testSuccessfulLogin()[pri:0, instance:tests.LoginTest@6200f9cb]" started-at="2025-08-16T22:19:00 CST" name="testSuccessfulLogin" finished-at="2025-08-16T22:19:00 CST" duration-ms="265" status="PASS">
+        <test-method signature="testMismatchedPasswords()[pri:0, instance:tests.RegisterTest@20d525]" started-at="2025-08-18T00:15:20 CST" name="testMismatchedPasswords" finished-at="2025-08-18T00:15:22 CST" duration-ms="1621" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSuccessfulLogin -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@6200f9cb]" started-at="2025-08-16T22:19:00 CST" name="tearDown" finished-at="2025-08-16T22:19:00 CST" duration-ms="125" status="PASS">
+        </test-method> <!-- testMismatchedPasswords -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.RegisterTest@20d525]" started-at="2025-08-18T00:15:22 CST" name="tearDown" finished-at="2025-08-18T00:15:22 CST" duration-ms="123" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testSuccessfulLogin status=SUCCESS method=LoginTest.testSuccessfulLogin()[pri:0, instance:tests.LoginTest@6200f9cb] output={null}]]]>
+                <![CDATA[[TestResult name=testMismatchedPasswords status=SUCCESS method=RegisterTest.testMismatchedPasswords()[pri:0, instance:tests.RegisterTest@20d525] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTest@6200f9cb]" started-at="2025-08-16T22:19:00 CST" name="setup" finished-at="2025-08-16T22:19:02 CST" duration-ms="1542" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.RegisterTest@20d525]" started-at="2025-08-18T00:15:22 CST" name="setup" finished-at="2025-08-18T00:15:24 CST" duration-ms="1534" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testWrongEmail()[pri:0, instance:tests.LoginTest@6200f9cb]" started-at="2025-08-16T22:19:02 CST" name="testWrongEmail" finished-at="2025-08-16T22:19:03 CST" duration-ms="1283" status="PASS">
+        <test-method signature="testSuccessfulRegistration()[pri:0, instance:tests.RegisterTest@20d525]" started-at="2025-08-18T00:15:24 CST" name="testSuccessfulRegistration" finished-at="2025-08-18T00:15:24 CST" duration-ms="812" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testWrongEmail -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@6200f9cb]" started-at="2025-08-16T22:19:03 CST" name="tearDown" finished-at="2025-08-16T22:19:03 CST" duration-ms="128" status="PASS">
+        </test-method> <!-- testSuccessfulRegistration -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.RegisterTest@20d525]" started-at="2025-08-18T00:15:24 CST" name="tearDown" finished-at="2025-08-18T00:15:25 CST" duration-ms="119" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testWrongEmail status=SUCCESS method=LoginTest.testWrongEmail()[pri:0, instance:tests.LoginTest@6200f9cb] output={null}]]]>
+                <![CDATA[[TestResult name=testSuccessfulRegistration status=SUCCESS method=RegisterTest.testSuccessfulRegistration()[pri:0, instance:tests.RegisterTest@20d525] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTest@6200f9cb]" started-at="2025-08-16T22:19:03 CST" name="setup" finished-at="2025-08-16T22:19:04 CST" duration-ms="1405" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="testWrongPassword()[pri:0, instance:tests.LoginTest@6200f9cb]" started-at="2025-08-16T22:19:04 CST" name="testWrongPassword" finished-at="2025-08-16T22:19:06 CST" duration-ms="1283" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testWrongPassword -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@6200f9cb]" started-at="2025-08-16T22:19:06 CST" name="tearDown" finished-at="2025-08-16T22:19:06 CST" duration-ms="128" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testWrongPassword status=SUCCESS method=LoginTest.testWrongPassword()[pri:0, instance:tests.LoginTest@6200f9cb] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDownReport()[pri:0, instance:tests.LoginTest@6200f9cb]" started-at="2025-08-16T22:19:06 CST" name="tearDownReport" finished-at="2025-08-16T22:19:06 CST" duration-ms="207" status="PASS">
+        <test-method is-config="true" signature="tearDownReport()[pri:0, instance:tests.RegisterTest@20d525]" started-at="2025-08-18T00:15:25 CST" name="tearDownReport" finished-at="2025-08-18T00:15:25 CST" duration-ms="254" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownReport -->
-      </class> <!-- tests.LoginTest -->
+      </class> <!-- tests.RegisterTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
