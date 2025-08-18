@@ -29,8 +29,26 @@ public class RegisterTest extends BaseTest{
 		test.info("confirm password entered");
 		registerPage.clickShowPassword();
 		test.info("show password button clicked");
-		//registerPage.clickNextBtn();
+		registerPage.clickNextBtn();
 		test.info("next button clicked");
+		registerPage.enterFullName("Juan Dela Cruz");
+		test.info("Full name entered");
+		registerPage.enterPhoneNumber("09123456789");
+		test.info("Phone number entered");
+		registerPage.enterAge("23");
+		test.info("Age entered");
+		registerPage.enterPhase("1");
+		test.info("Phase entered");
+		registerPage.enterBlock("12");
+		test.info("Block entered");
+		registerPage.enterLot("41");
+		test.info("Lot entered");
+		registerPage.selectCategory();
+		test.info("Category selected");
+		registerPage.clickNextBtn();
+		test.info("next button clicked");
+		registerPage.clickSubmitBtn();
+		test.info("submit button clicked");
 		test.pass("Register Successfully");
 	}
 	

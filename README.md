@@ -1,6 +1,6 @@
 # 🧪 Automated UI Testing with Selenium & TestNG
 
-This project contains automated test cases for a web application using the Page Object Model (POM) design pattern, Selenium WebDriver, and TestNG.
+This project contains automated test cases for a web application using the **Page Object Model (POM)** design pattern, **Selenium WebDriver**, and **TestNG**.
 
 ---
 
@@ -8,14 +8,26 @@ This project contains automated test cases for a web application using the Page 
 
 ### ✅ Login Page
 
-| Test Case Description                         | Test Type   | Expected Result                                                                 | Status |
-|-----------------------------------------------|-------------|---------------------------------------------------------------------------------|--------|
-| Successful login                              | Positive    | User is logged in and redirected to dashboard or home page                      | ✅     |
-| Invalid email                                 | Negative    | Error message is displayed indicating invalid credentials                       | ✅     |
-| Wrong password                                | Negative    | Error message is displayed indicating invalid credentials                       | ✅     |
-| Empty email field                             | Negative    | Error or validation message prompts user to enter an email                      | ✅     |
-| Empty password field                          | Negative    | Error or validation message prompts user to enter a password                    | ✅     |
-| Show password button                          | Functional  | Password input becomes visible upon clicking the show/hide button               | ✅     |
+| Test Case Description        | Test Type   | Expected Result                                               | Status |
+|------------------------------|-------------|---------------------------------------------------------------|--------|
+| Successful login             | Positive    | User is logged in and redirected to dashboard/home page       | ✅     |
+| Invalid email                | Negative    | Error message is displayed indicating invalid credentials     | ✅     |
+| Wrong password               | Negative    | Error message is displayed indicating invalid credentials     | ✅     |
+| Empty email field            | Negative    | Validation prompts user to enter an email                     | ✅     |
+| Empty password field         | Negative    | Validation prompts user to enter a password                   | ✅     |
+| Show password button         | Functional  | Password input becomes visible upon clicking toggle button    | ✅     |
+
+---
+
+### ✅ Register Page
+
+| Test Case Description         | Test Type   | Expected Result                                                                 | Status |
+|-------------------------------|-------------|---------------------------------------------------------------------------------|--------|
+| Successful registration       | Positive    | User is registered successfully and redirected/confirmation shown               | ✅     |
+| Mismatched passwords          | Negative    | Error message appears indicating passwords do not match                         | ✅     |
+| Invalid email format          | Negative    | Error message appears indicating invalid email format                           | ✅     |
+| Empty required fields         | Negative    | Validation messages displayed for all required fields                           | ✅     |
+| Show password button          | Functional  | Password becomes visible upon clicking show/hide button                         | ✅     |
 
 ---
 

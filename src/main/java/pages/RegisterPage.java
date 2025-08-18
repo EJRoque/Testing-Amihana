@@ -9,6 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import utils.Log;
@@ -29,7 +30,7 @@ public class RegisterPage {
 	@FindBy(xpath = "//*[@id=\"root\"]/div[1]/div/div/form/div[2]/div[1]/div[2]/div[1]/div/span/span")
 	WebElement showPasswordBtn;
 	
-	@FindBy(xpath = "//*[@id=\"root\"]/div[1]/div/div/form/div[4]/div/div/div/div/button")
+	@FindBy(xpath = "//button[@type='submit' and span[text()='Next']]")
 	WebElement nextBtn;
 	
 	@FindBy(id="email_help")
@@ -44,6 +45,34 @@ public class RegisterPage {
 	@FindBy(xpath = "/html/body/div[2]/div/div/div/div/span[2]")
 	WebElement passwordMismatchErrorText;
 	
+	//Onboarding
+	@FindBy(xpath="//div[@id='fullName']/input")
+	WebElement fullNameTextBox;
+	
+	@FindBy(id="phoneNumber")
+	WebElement phoneNumberTextBox;
+	
+	@FindBy(id="age")
+	WebElement ageTextBox;
+	
+	@FindBy(id="phase")
+	WebElement phaseTextBox;
+	
+	@FindBy(id="block")
+	WebElement blockTextBox;
+	
+	@FindBy(id="lot")
+	WebElement lotTextBox;
+	
+	@FindBy(xpath="//input[@id='category']")
+	WebElement categorySelectBtn;
+	
+	@FindBy(xpath = "//div[@class='ant-select-item-option-content' and text()='Homeowner']")
+	WebElement optionText;
+	
+	@FindBy(xpath="//button[@type='submit' and span[text()='Submit']]")
+	WebElement submitBtn;
+	
 	public RegisterPage(WebDriver driver) {
 		this.driver = driver;
 		driver.navigate().to(registerUrl);
@@ -56,7 +85,7 @@ public class RegisterPage {
 	}
 	
 	public boolean invalidEmailErrorMessage() {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(1));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 	    wait.until(ExpectedConditions.visibilityOf(emailErrorText));
 		return emailErrorText.isDisplayed() && 
 			   emailErrorText.getText().contains("Please enter a valid email!");
@@ -98,4 +127,49 @@ public class RegisterPage {
 		nextBtn.click();
 		Log.info("Register button clicked...");
 	}
+	
+	//Onboarding
+	
+	public void enterFullName(String fullName) {
+		fullNameTextBox.sendKeys(fullName);
+		Log.info("Full name entered...");
+	}
+	
+	public void enterPhoneNumber(String phoneNumber) {
+		phoneNumberTextBox.sendKeys(phoneNumber);
+		Log.info("Phone number entered...");
+	}
+	
+	public void enterAge(String age) {
+		ageTextBox.sendKeys(age);
+		Log.info("Age entered...");
+	}
+	
+	public void enterPhase(String phase) {
+		phaseTextBox.sendKeys(phase);
+		Log.info("Phase entered...");
+	}
+	
+	public void enterBlock(String block) {
+		blockTextBox.sendKeys(block);
+		Log.info("Block entered...");
+	}
+	
+	public void enterLot(String lot) {
+		lotTextBox.sendKeys(lot);
+		Log.info("Lot entered...");
+	}
+	
+	public void selectCategory() {
+		categorySelectBtn.click();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
+		optionText.click();
+		Log.info("Category selected...");
+	}
+	
+	public void clickSubmitBtn() {
+		submitBtn.click();
+		Log.info("Submit button clicked...");
+	}
+	
 }
