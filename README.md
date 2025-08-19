@@ -31,6 +31,16 @@ This project contains automated test cases for a web application using the **Pag
 
 ---
 
+### ✅ Announcement Admin Page
+
+| Test Case Description         | Test Type  | Expected Result                                                | Status |
+| ----------------------------- | ---------- | -------------------------------------------------------------- | ------ |
+| Open and close post modal     | Functional | Modal opens and closes successfully                            | ✅      |
+| Valid announcement submission | Positive   | Announcement is successfully posted with valid title and body  | ✅      |
+| Required field validation     | Negative   | Validation error appears when title/body fields are left empty | ✅      |
+
+---
+
 ## 🚀 How to Run the Tests
 
 1. Clone or download this repository  

@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Personal\AppData\Local\Temp\testng-eclipse-466478285\testng-customsuite.xml</span>
+                    <span>C:\Users\Personal\AppData\Local\Temp\testng-eclipse-1821628056\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,6 +104,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="tests.Announcement_AdminTest" class="method navigator-link" hash-for-method="testOpeningAndClosingModal">testOpeningAndClosingModal</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="tests.Announcement_AdminTest" class="method navigator-link" hash-for-method="testRequiredFieldValidation">testRequiredFieldValidation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -138,6 +143,13 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="testRequiredFieldValidation">
+                  </a> <!-- testRequiredFieldValidation -->
+                  <span class="method-name">testRequiredFieldValidation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="testValidAnnouncementPostSubmission">
                   </a> <!-- testValidAnnouncementPostSubmission -->
                   <span class="method-name">testValidAnnouncementPostSubmission</span>
@@ -148,7 +160,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Personal\AppData\Local\Temp\testng-eclipse-466478285\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Personal\AppData\Local\Temp\testng-eclipse-1821628056\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -197,20 +209,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testValidAnnouncementPostSubmission')
 data.setCell(0, 2, 'tests.Announcement_AdminTest')
-data.setCell(0, 3, 863);
+data.setCell(0, 3, 899);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testOpeningAndClosingModal')
 data.setCell(1, 2, 'tests.Announcement_AdminTest')
-data.setCell(1, 3, 471);
+data.setCell(1, 3, 592);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testRequiredFieldValidation')
+data.setCell(2, 2, 'tests.Announcement_AdminTest')
+data.setCell(2, 3, 512);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 2 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -243,31 +259,43 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">179 ms</span>
+                <span class="method-start">192 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testOpeningAndClosingModal</span>
-                <span class="method-start">2236 ms</span>
+                <span class="method-start">2510 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=testOpeningAndClosingModal status=SUCCESS method=Announcement_AdminTest.testOpening...)</span>
-                <span class="method-start">2710 ms</span>
+                <span class="method-start">3104 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">2841 ms</span>
+                <span class="method-start">3254 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testRequiredFieldValidation</span>
+                <span class="method-start">4787 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testRequiredFieldValidation status=SUCCESS method=Announcement_AdminTest.testRequir...)</span>
+                <span class="method-start">5300 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">5416 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testValidAnnouncementPostSubmission</span>
-                <span class="method-start">4188 ms</span>
+                <span class="method-start">6887 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=testValidAnnouncementPostSubmission status=SUCCESS method=Announcement_AdminTest.te...)</span>
-                <span class="method-start">5052 ms</span>
+                <span class="method-start">7788 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDownReport</span>
-                <span class="method-start">5206 ms</span>
+                <span class="method-start">7940 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

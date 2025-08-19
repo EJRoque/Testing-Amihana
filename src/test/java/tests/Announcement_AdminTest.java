@@ -37,4 +37,16 @@ public class Announcement_AdminTest extends BaseTest{
 		test.info("post submit button clicked");
 		test.pass("Announcement Post Successfully");
 	}
+	
+	@Test 
+	public void testRequiredFieldValidation() {
+		test = ExtentReportManager.createTest("Test Required Field Validation");
+		Announcement_AdminPage announcement_AdminPage = new Announcement_AdminPage(driver);
+		
+		announcement_AdminPage.openPostModal();
+		test.info("post modal opened");
+		announcement_AdminPage.clickPostSubmitBtn();
+		test.info("post submit button clicked");
+		test.pass("Validation error appeared as expected");
+	}
 }

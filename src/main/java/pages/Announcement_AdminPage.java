@@ -41,6 +41,7 @@ public class Announcement_AdminPage {
 	}
 	
 	public void closePostModal() {
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
 		closePostBtn.click();
 		Log.info("Post modal closed...");
 	}
