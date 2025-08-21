@@ -7,6 +7,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import utils.Log;
 
@@ -20,8 +22,17 @@ public class VenueAdminPage {
 	@FindBy(className = "ant-modal-close")
 	WebElement closeModalBtn;
 	
-	@FindBy(xpath = "//button[.//abbr[@aria-label='August 22, 2025']]")
+	@FindBy(xpath = "//button[.//abbr[@aria-label='August 31, 2025']]")
 	WebElement dateBtn;
+	
+	@FindBy(xpath = "//div[@class='ant-message-custom-content ant-message-error']//span[text()='Please select a Date.']")
+	WebElement dateValdiationMessage;
+	
+	@FindBy(xpath = "//div[@class='ant-message-custom-content ant-message-error']//span[text()='Please select a Venue.']")
+	WebElement venueValdiationMessage;
+	
+	@FindBy(xpath = "//div[@class='ant-message-custom-content ant-message-error']//span[text()='Please select a Start time.']")
+	WebElement timeValdiationMessage;
 	
 	@FindBy(xpath = "//*[@id=\"rc_select_2\"]")
 	WebElement selectVenueBtn;
@@ -60,29 +71,52 @@ public class VenueAdminPage {
 	}
 	
 	public void selectDate() {
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		dateBtn.click();
 		Log.info("Date selected...");
 	}
 	
 	public void selectVenue() {
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		selectVenueBtn.click();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		basketballBtn.click();
 		Log.info("Venue selected...");
 	}
 	
 	public void selectStartTimeDuration(String time) {
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		startTimeSelectBtn.click();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
 		startTimeSelectBtn.sendKeys(time, Keys.ENTER);
 		Log.info("Start time duration selected...");
 	}
 	
 	public void selectEndTimeDuration(String time) {
 		endTimeSelectBtn.click();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		endTimeSelectBtn.sendKeys(time, Keys.ENTER);
 		Log.info("End time duration selected...");
+	}
+	
+	public boolean isDateValidationMessageDisplayed() {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
+	    wait.until(ExpectedConditions.visibilityOf(dateValdiationMessage));
+	    return dateValdiationMessage.isDisplayed() &&
+	    		dateValdiationMessage.getText().contains("Please select a Date.");
+	}
+	
+	public boolean isVenueValidationMessageDisplayed() {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
+	    wait.until(ExpectedConditions.visibilityOf(venueValdiationMessage));
+	    return venueValdiationMessage.isDisplayed() &&
+	    		venueValdiationMessage.getText().contains("Please select a Venue.");
+	}
+	
+	public boolean isTimeValidationMessageDisplayed() {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
+	    wait.until(ExpectedConditions.visibilityOf(timeValdiationMessage));
+	    return timeValdiationMessage.isDisplayed() &&
+	    		timeValdiationMessage.getText().contains("Please select a Start time.");
 	}
 	
 	public void clickSubmitBtn() {

@@ -41,6 +41,19 @@ This project contains automated test cases for a web application using the **Pag
 
 ---
 
+### ✅ Venue Page
+
+| Test Case Description            | Test Type   | Expected Result                                                                 | Status |
+|----------------------------------|-------------|---------------------------------------------------------------------------------|--------|
+| Open and close venue modal       | Functional  | Venue modal opens and closes successfully                                       | ✅     |
+| Valid reservation submission     | Positive    | Reservation is submitted successfully with valid inputs                         | ✅     |
+| Missing date validation          | Negative    | Validation error appears when no date is selected                               | ✅     |
+| Missing venue validation         | Negative    | Validation error appears when no venue is selected                              | ✅     |
+| Invalid time range               | Negative    | Validation error appears when end time is before or same as start time          | ✅     |
+
+
+---
+
 ## 🚀 How to Run the Tests
 
 1. Clone or download this repository  

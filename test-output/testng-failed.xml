@@ -8,7 +8,7 @@
           <include name="setup"/>
           <include name="tearDown"/>
           <include name="setupReport"/>
-          <include name="testValidReservationSubmission"/>
+          <include name="testInvalidTimeRange"/>
           <include name="tearDownReport"/>
         </methods>
       </class> <!-- tests.VenueAdminTest -->
