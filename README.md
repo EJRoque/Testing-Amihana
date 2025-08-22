@@ -31,7 +31,7 @@ This project contains automated test cases for a web application using the **Pag
 
 ---
 
-### ✅ Announcement Admin Page
+### ✅ Announcement Page
 
 | Test Case Description         | Test Type  | Expected Result                                                | Status |
 | ----------------------------- | ---------- | -------------------------------------------------------------- | ------ |

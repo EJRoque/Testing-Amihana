@@ -1,116 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-21T22:41:35 CST" name="Default suite" finished-at="2025-08-21T22:41:56 CST" duration-ms="20814">
+  <suite started-at="2025-08-22T22:50:22 CST" name="Default suite" finished-at="2025-08-22T22:50:25 CST" duration-ms="2741">
     <groups>
     </groups>
-    <test started-at="2025-08-21T22:41:35 CST" name="Default test" finished-at="2025-08-21T22:41:56 CST" duration-ms="20814">
-      <class name="tests.VenueAdminTest">
-        <test-method is-config="true" signature="setupReport()[pri:0, instance:tests.VenueAdminTest@6200f9cb]" started-at="2025-08-21T22:41:35 CST" name="setupReport" finished-at="2025-08-21T22:41:35 CST" duration-ms="150" status="PASS">
+    <test started-at="2025-08-22T22:50:22 CST" name="Default test" finished-at="2025-08-22T22:50:25 CST" duration-ms="2741">
+      <class name="tests.BalanceSheetTest">
+        <test-method is-config="true" signature="setupReport()[pri:0, instance:tests.BalanceSheetTest@6200f9cb]" started-at="2025-08-22T22:50:22 CST" name="setupReport" finished-at="2025-08-22T22:50:22 CST" duration-ms="164" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupReport -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.VenueAdminTest@6200f9cb]" started-at="2025-08-21T22:41:35 CST" name="setup" finished-at="2025-08-21T22:41:37 CST" duration-ms="1983" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.BalanceSheetTest@6200f9cb]" started-at="2025-08-22T22:50:22 CST" name="setup" finished-at="2025-08-22T22:50:24 CST" duration-ms="2209" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testInvalidTimeRange()[pri:0, instance:tests.VenueAdminTest@6200f9cb]" started-at="2025-08-21T22:41:37 CST" name="testInvalidTimeRange" finished-at="2025-08-21T22:41:40 CST" duration-ms="3368" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testInvalidTimeRange -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.VenueAdminTest@6200f9cb]" started-at="2025-08-21T22:41:40 CST" name="tearDown" finished-at="2025-08-21T22:41:41 CST" duration-ms="135" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testInvalidTimeRange status=SUCCESS method=VenueAdminTest.testInvalidTimeRange()[pri:0, instance:tests.VenueAdminTest@6200f9cb] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.VenueAdminTest@6200f9cb]" started-at="2025-08-21T22:41:41 CST" name="setup" finished-at="2025-08-21T22:41:42 CST" duration-ms="1457" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="testOpeningAndClosingModal()[pri:0, instance:tests.VenueAdminTest@6200f9cb]" started-at="2025-08-21T22:41:42 CST" name="testOpeningAndClosingModal" finished-at="2025-08-21T22:41:42 CST" duration-ms="457" status="PASS">
+        <test-method signature="testOpeningAndClosingModal()[pri:0, instance:tests.BalanceSheetTest@6200f9cb]" started-at="2025-08-22T22:50:24 CST" name="testOpeningAndClosingModal" finished-at="2025-08-22T22:50:25 CST" duration-ms="503" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testOpeningAndClosingModal -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.VenueAdminTest@6200f9cb]" started-at="2025-08-21T22:41:42 CST" name="tearDown" finished-at="2025-08-21T22:41:43 CST" duration-ms="126" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.BalanceSheetTest@6200f9cb]" started-at="2025-08-22T22:50:25 CST" name="tearDown" finished-at="2025-08-22T22:50:25 CST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testOpeningAndClosingModal status=SUCCESS method=VenueAdminTest.testOpeningAndClosingModal()[pri:0, instance:tests.VenueAdminTest@6200f9cb] output={null}]]]>
+                <![CDATA[[TestResult name=testOpeningAndClosingModal status=SUCCESS method=BalanceSheetTest.testOpeningAndClosingModal()[pri:0, instance:tests.BalanceSheetTest@6200f9cb] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.VenueAdminTest@6200f9cb]" started-at="2025-08-21T22:41:43 CST" name="setup" finished-at="2025-08-21T22:41:44 CST" duration-ms="1440" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="testSubmitWithoutDate()[pri:0, instance:tests.VenueAdminTest@6200f9cb]" started-at="2025-08-21T22:41:44 CST" name="testSubmitWithoutDate" finished-at="2025-08-21T22:41:48 CST" duration-ms="3496" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSubmitWithoutDate -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.VenueAdminTest@6200f9cb]" started-at="2025-08-21T22:41:48 CST" name="tearDown" finished-at="2025-08-21T22:41:48 CST" duration-ms="129" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testSubmitWithoutDate status=SUCCESS method=VenueAdminTest.testSubmitWithoutDate()[pri:0, instance:tests.VenueAdminTest@6200f9cb] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.VenueAdminTest@6200f9cb]" started-at="2025-08-21T22:41:48 CST" name="setup" finished-at="2025-08-21T22:41:49 CST" duration-ms="1404" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="testSubmitWithoutVenue()[pri:0, instance:tests.VenueAdminTest@6200f9cb]" started-at="2025-08-21T22:41:49 CST" name="testSubmitWithoutVenue" finished-at="2025-08-21T22:41:51 CST" duration-ms="1485" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSubmitWithoutVenue -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.VenueAdminTest@6200f9cb]" started-at="2025-08-21T22:41:51 CST" name="tearDown" finished-at="2025-08-21T22:41:51 CST" duration-ms="138" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testSubmitWithoutVenue status=SUCCESS method=VenueAdminTest.testSubmitWithoutVenue()[pri:0, instance:tests.VenueAdminTest@6200f9cb] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.VenueAdminTest@6200f9cb]" started-at="2025-08-21T22:41:51 CST" name="setup" finished-at="2025-08-21T22:41:52 CST" duration-ms="1801" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="testValidReservationSubmission()[pri:0, instance:tests.VenueAdminTest@6200f9cb]" started-at="2025-08-21T22:41:52 CST" name="testValidReservationSubmission" finished-at="2025-08-21T22:41:56 CST" duration-ms="3220" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testValidReservationSubmission -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.VenueAdminTest@6200f9cb]" started-at="2025-08-21T22:41:56 CST" name="tearDown" finished-at="2025-08-21T22:41:56 CST" duration-ms="141" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testValidReservationSubmission status=SUCCESS method=VenueAdminTest.testValidReservationSubmission()[pri:0, instance:tests.VenueAdminTest@6200f9cb] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDownReport()[pri:0, instance:tests.VenueAdminTest@6200f9cb]" started-at="2025-08-21T22:41:56 CST" name="tearDownReport" finished-at="2025-08-21T22:41:56 CST" duration-ms="193" status="PASS">
+        <test-method is-config="true" signature="tearDownReport()[pri:0, instance:tests.BalanceSheetTest@6200f9cb]" started-at="2025-08-22T22:50:25 CST" name="tearDownReport" finished-at="2025-08-22T22:50:25 CST" duration-ms="281" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownReport -->
-      </class> <!-- tests.VenueAdminTest -->
+      </class> <!-- tests.BalanceSheetTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
