@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.VenueAdminTest">
+      <class name="tests.BalanceSheetTest">
         <methods>
           <include name="setup"/>
           <include name="tearDown"/>
           <include name="setupReport"/>
-          <include name="testInvalidTimeRange"/>
+          <include name="testCreatingNewBalanceSheet"/>
           <include name="tearDownReport"/>
         </methods>
-      </class> <!-- tests.VenueAdminTest -->
+      </class> <!-- tests.BalanceSheetTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
